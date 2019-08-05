@@ -4,10 +4,10 @@ By default some common static files (site.webmanifest, *.woff2, *.woff and *.ttf
 
 This will work with:
 
-* site.webmanifest
-* woff2
-* .woff
-* .ttf
+* *.webmanifest
+* *.woff2
+* *.woff
+* *.ttf
 
 # How to add this extension
 
