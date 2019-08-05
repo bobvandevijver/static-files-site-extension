@@ -1,1 +1,1 @@
-nuget pack EnableFontAwesome.nuspec
+nuget pack AzureAppServiceStaticFiles.nuspec

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>AzureAppServiceStaticFiles</id>
+    <title>Enable Static Web Files</title>
+    <version>1.0.0</version>
+    <authors>Johnny Qian, Bob van de Vijver</authors>
+    <projectUrl>https://github.com/bobvandevijver/static-files-site-extension</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/bobvandevijver/static-files-site-extension/master/icon.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Azure App Service site extension that enables static web files.</description>
+    <tags>AzureSiteExtension Static files webmanifest woff woff2 ttf</tags>
+    <packageTypes>
+      <packageType name="AzureSiteExtension" />
+    </packageTypes>
+  </metadata>
+  <files>
+    <file src="..\src\*.*" target="content" />
+  </files>
+</package>
