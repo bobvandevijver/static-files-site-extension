@@ -11,7 +11,24 @@ This will work with:
 
 # How to add this extension
 
-Locate your **App Service** in Azure portal, in the blade, you'll find the "Extensions" tab, in the right pane, click "Add", find "Serve common static files", click OK. Then **restart App Service**, that's it.
+Locate your **App Service** in Azure portal, in the blade, you'll find the "Extensions" tab, in the right pane, click "Add", find "Enable Static Web Files", click OK. Then **restart App Service**, that's it.
+
+When using ARM, you can add this extension by adding the following to your template:
+```
+  {
+      "name": "App",
+      "apiVersion": "2018-02-01",
+      "type": "Microsoft.Web/sites",
+      "resources": [
+        {
+          "name": "AzureAppServiceStaticFiles",
+          "type": "siteextensions",
+          "apiVersion": "2018-02-01",
+          "dependsOn": ["App"]
+        }
+      ]
+    }
+```
 
 # Credits
 
